@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import Header from './Header';
+import Logon from './pages/Logon';
+
+import './global.css';
 
 function App() {
   // Array [valor, funcao de atualizacao]
-  const [counter, setCounter] = useState(0);
-
-  function increment() {
-    setCounter(counter + 1);
-  }
+  //const [counter, setCounter] = useState(0);
 
   return (
     <div>
-      <Header>Contador: {counter}</Header>
-      <button onClick={increment}>Incrementar</button>
+      <Logon />
     </div>
 
   );
